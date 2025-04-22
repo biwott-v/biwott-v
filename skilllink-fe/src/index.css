@@ -1,11 +1,11 @@
 :root {
-  --primary-blue: #005BEA;
-  --secondary-blue: #00C6FB;
-  --bg-light: #f0f4ff;
-  --text-dark: #0a0a0a;
-  --card-bg: #ffffff;
-  --border-color: #dfe6f1;
-  --button-radius: 8px;
+  --royal-blue: #002D72;
+  --royal-black: #0B0B0B;
+  --accent-blue: #0044CC;
+  --light-text: #F0F0F0;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --gold-accent: #FFD700;
+  --button-radius: 10px;
 }
 
 * {
@@ -14,16 +14,12 @@
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--bg-light);
-  color: var(--text-dark);
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(145deg, #0B0B0B, #002244);
+  color: var(--light-text);
 }
 
-h1, h2, h3 {
-  color: var(--primary-blue);
-  margin-top: 0;
-}
-
+/* Layout */
 .app-container {
   display: flex;
   height: 100vh;
@@ -33,68 +29,100 @@ h1, h2, h3 {
 /* Sidebar */
 .sidebar {
   width: 30%;
-  background: linear-gradient(180deg, var(--primary-blue), var(--secondary-blue));
-  color: white;
+  background: linear-gradient(to bottom, var(--royal-blue), #001a44);
   padding: 1.5rem;
   overflow-y: auto;
+  color: var(--light-text);
 }
 
 .sidebar h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
+  font-weight: 700;
+  color: var(--gold-accent);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Search box */
+.sidebar input {
+  background-color: #111;
+  color: var(--light-text);
+  border: 1px solid #444;
+  padding: 0.6rem;
+  width: 100%;
+  border-radius: var(--button-radius);
+  margin-bottom: 1rem;
+}
+
+/* Skill Cards */
+.skill-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--button-radius);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+.skill-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0;
+  color: var(--light-text);
+  transition: color 0.3s;
+}
+
+/* 🔥 Icon animation + golden glow on hover */
+.skill-card:hover h3 svg {
+  transform: scale(1.25);
+  color: var(--gold-accent);
+  transition: all 0.3s ease;
 }
 
 /* Skill Details Panel */
 .skill-details {
   width: 70%;
   padding: 2rem;
-  background-color: var(--bg-light);
-  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(12px);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Card Style (optional for skills) */
-.skill-card {
-  background-color: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: var(--button-radius);
-  padding: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  cursor: pointer;
-  transition: transform 0.2s;
+.skill-details h2 {
+  font-size: 2rem;
+  color: var(--gold-accent);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
-.skill-card:hover {
-  transform: translateY(-2px);
-}
-
-/* Buttons (optional use) */
-.button {
-  background: linear-gradient(to right, var(--primary-blue), var(--secondary-blue));
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: var(--button-radius);
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.button:hover {
-  opacity: 0.9;
-}
-
+/* Floating New Skill Button */
 .floating-btn {
   position: fixed;
   bottom: 20px;
   right: 30px;
-  background: linear-gradient(to right, var(--primary-blue), var(--secondary-blue));
-  color: white;
+  background: linear-gradient(to right, #FFD700, #FFA500);
+  color: #0B0B0B;
+  font-weight: 600;
+  font-size: 1rem;
   padding: 1rem 1.5rem;
   border: none;
   border-radius: 50px;
-  font-size: 1rem;
-  font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.floating-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.8);
 }
