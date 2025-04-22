@@ -83,3 +83,18 @@ h1, h2, h3 {
 .button:hover {
   opacity: 0.9;
 }
+
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background: linear-gradient(to right, var(--primary-blue), var(--secondary-blue));
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}

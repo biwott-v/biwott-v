@@ -68,11 +68,31 @@ function App() {
   ]);
 
   const [selectedSkill, setSelectedSkill] = useState(null);
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const filteredSkills = skills.filter((skill) =>
+    skill.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const handleAddSkill = () => {
+    const newSkill = {
+      id: skills.length + 1,
+      title: 'New Skill Title',
+      description: 'This is a placeholder for a new skill.'
+    };
+    setSkills([newSkill, ...skills]);
+  };
 
   return (
     <div className="app-container">
-      <Sidebar skills={skills} onSelect={setSelectedSkill} />
+      <Sidebar
+        skills={filteredSkills}
+        onSelect={setSelectedSkill}
+        searchTerm={searchTerm}
+        onSearch={setSearchTerm}
+      />
       <SkillDetails skill={selectedSkill} />
+      <button className="floating-btn" onClick={handleAddSkill}>+ New Skill</button>
     </div>
   );
 }
