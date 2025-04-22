@@ -1,10 +1,18 @@
 import React from 'react';
 
-function Sidebar() {
+function Sidebar({ skills, onSelect }) {
   return (
     <div className="sidebar">
       <h2>Available Skills</h2>
-      {/* We’ll map skills here soon */}
+      {skills.map((skill) => (
+        <div
+          key={skill.id}
+          className="skill-card"
+          onClick={() => onSelect(skill)}
+        >
+          <h3>{skill.title}</h3>
+        </div>
+      ))}
     </div>
   );
 }
