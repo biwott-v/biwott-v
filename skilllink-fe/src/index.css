@@ -1,26 +1,85 @@
 :root {
   --primary-blue: #005BEA;
+  --secondary-blue: #00C6FB;
+  --bg-light: #f0f4ff;
+  --text-dark: #0a0a0a;
+  --card-bg: #ffffff;
+  --border-color: #dfe6f1;
+  --button-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: sans-serif;
-  background-color: #f4f6fb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+h1, h2, h3 {
+  color: var(--primary-blue);
+  margin-top: 0;
 }
 
 .app-container {
   display: flex;
   height: 100vh;
+  overflow: hidden;
 }
 
+/* Sidebar */
 .sidebar {
   width: 30%;
-  background-color: #eaf1ff;
-  padding: 1rem;
-  border-right: 2px solid #ccc;
+  background: linear-gradient(180deg, var(--primary-blue), var(--secondary-blue));
+  color: white;
+  padding: 1.5rem;
+  overflow-y: auto;
 }
 
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Skill Details Panel */
 .skill-details {
   width: 70%;
+  padding: 2rem;
+  background-color: var(--bg-light);
+  overflow-y: auto;
+}
+
+/* Card Style (optional for skills) */
+.skill-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--button-radius);
   padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Buttons (optional use) */
+.button {
+  background: linear-gradient(to right, var(--primary-blue), var(--secondary-blue));
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--button-radius);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  opacity: 0.9;
 }
