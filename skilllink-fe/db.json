@@ -1,0 +1,203 @@
+[
+    {
+      "id": 1,
+      "name": "Plumbing",
+      "description": "The installation, repair, and maintenance of systems involving water supply, drainage, and sewage using pipes, fixtures, and fittings.",
+      "category": "Construction",
+      "level": "Intermediate",
+      "min_experience_years": 2
+    },
+    {
+      "id": 2,
+      "name": "Painting",
+      "description": "The preparation and application of paint or other finishes to interior and exterior surfaces for decorative or protective purposes.",
+      "category": "Finishing",
+      "level": "Beginner",
+      "min_experience_years": 0
+    },
+    {
+      "id": 3,
+      "name": "Carpentry",
+      "description": "The construction, installation, and repair of structures and objects made of wood, including framing, cabinetry, and furniture.",
+      "category": "Construction",
+      "level": "Intermediate",
+      "min_experience_years": 2
+    },
+    {
+      "id": 4,
+      "name": "Electrical Work",
+      "description": "The installation and maintenance of wiring, circuit breakers, and electrical systems for residential, commercial, and industrial use.",
+      "category": "Electrical",
+      "level": "Advanced",
+      "min_experience_years": 4
+    },
+    {
+      "id": 5,
+      "name": "Landscaping",
+      "description": "Designing, installing, and maintaining outdoor areas such as gardens, lawns, and pathways using plants, hardscapes, and irrigation systems.",
+      "category": "Outdoor",
+      "level": "Beginner",
+      "min_experience_years": 1
+    },
+    {
+      "id": 6,
+      "name": "Masonry",
+      "description": "The construction of structures using brick, stone, or concrete blocks, often involving mortar and specialized tools.",
+      "category": "Construction",
+      "level": "Intermediate",
+      "min_experience_years": 3
+    },
+    {
+      "id": 7,
+      "name": "Roofing",
+      "description": "Installation and repair of roofs using materials such as shingles, metal, tiles, and membranes to provide weather protection.",
+      "category": "Construction",
+      "level": "Intermediate",
+      "min_experience_years": 2
+    },
+    {
+      "id": 8,
+      "name": "HVAC",
+      "description": "Installation, maintenance, and repair of heating, ventilation, and air conditioning systems for indoor climate control.",
+      "category": "Mechanical",
+      "level": "Advanced",
+      "min_experience_years": 4
+    },
+    {
+      "id": 9,
+      "name": "Welding",
+      "description": "Joining metal parts by melting and fusing them, often used in construction, automotive, and manufacturing industries.",
+      "category": "Fabrication",
+      "level": "Intermediate",
+      "min_experience_years": 2
+    },
+    {
+      "id": 10,
+      "name": "Tiling",
+      "description": "Laying ceramic, porcelain, or stone tiles on walls, floors, and other surfaces for functional and aesthetic purposes.",
+      "category": "Finishing",
+      "level": "Beginner",
+      "min_experience_years": 1
+    },
+    {
+      "id": 11,
+      "name": "Drywall Installation",
+      "description": "The process of installing gypsum boards (drywall) on walls and ceilings, including taping, mudding, and sanding joints.",
+      "category": "Construction",
+      "level": "Beginner",
+      "min_experience_years": 0
+    },
+    {
+      "id": 12,
+      "name": "Flooring",
+      "description": "Installation and maintenance of various flooring materials such as hardwood, laminate, vinyl, and tile.",
+      "category": "Finishing",
+      "level": "Intermediate",
+      "min_experience_years": 1
+    },
+    {
+      "id": 13,
+      "name": "Auto Mechanics",
+      "description": "Diagnosing, repairing, and maintaining automobiles, including engines, transmissions, brakes, and electrical systems.",
+      "category": "Automotive",
+      "level": "Advanced",
+      "min_experience_years": 3
+    },
+    {
+      "id": 14,
+      "name": "Wiring and Cabling",
+      "description": "Running and organizing electrical or data cabling for power, telecommunications, or internet connectivity.",
+      "category": "Electrical",
+      "level": "Intermediate",
+      "min_experience_years": 2
+    },
+    {
+      "id": 15,
+      "name": "Glass Installation",
+      "description": "Cutting, fitting, and installing glass panes for windows, doors, or partitions in residential and commercial buildings.",
+      "category": "Finishing",
+      "level": "Intermediate",
+      "min_experience_years": 2
+    },
+    {
+      "id": 16,
+      "name": "Pest Control",
+      "description": "Inspection, prevention, and removal of pests such as insects, rodents, and wildlife using various chemical and non-chemical methods.",
+      "category": "Maintenance",
+      "level": "Beginner",
+      "min_experience_years": 1
+    },
+    {
+      "id": 17,
+      "name": "Bricklaying",
+      "description": "Building walls, chimneys, and other structures using bricks and mortar in accordance with structural and aesthetic requirements.",
+      "category": "Construction",
+      "level": "Intermediate",
+      "min_experience_years": 3
+    },
+    {
+      "id": 18,
+      "name": "Cabinet Making",
+      "description": "Custom design and fabrication of cabinetry and built-in furniture using wood, hardware, and finishing techniques.",
+      "category": "Woodworking",
+      "level": "Advanced",
+      "min_experience_years": 4
+    },
+    {
+      "id": 19,
+      "name": "Fence Installation",
+      "description": "Planning and constructing fencing structures using wood, metal, or vinyl for property boundaries or decorative purposes.",
+      "category": "Outdoor",
+      "level": "Beginner",
+      "min_experience_years": 1
+    },
+    {
+      "id": 20,
+      "name": "Siding Installation",
+      "description": "Attaching exterior wall coverings made of vinyl, wood, or metal to improve building aesthetics and insulation.",
+      "category": "Construction",
+      "level": "Intermediate",
+      "min_experience_years": 2
+    },
+    {
+      "id": 21,
+      "name": "Power Washing",
+      "description": "Cleaning surfaces such as driveways, siding, and decks using high-pressure water to remove dirt, mold, and grime.",
+      "category": "Cleaning",
+      "level": "Beginner",
+      "min_experience_years": 0
+    },
+    {
+      "id": 22,
+      "name": "Gutter Cleaning",
+      "description": "Removing debris from roof gutters and downspouts to ensure proper rainwater drainage and prevent water damage.",
+      "category": "Maintenance",
+      "level": "Beginner",
+      "min_experience_years": 0
+    },
+    {
+      "id": 23,
+      "name": "Window Installation",
+      "description": "Fitting and sealing new or replacement windows to improve insulation, lighting, and aesthetics.",
+      "category": "Construction",
+      "level": "Intermediate",
+      "min_experience_years": 2
+    },
+    {
+      "id": 24,
+      "name": "Locksmithing",
+      "description": "Installing, adjusting, and repairing locks and security systems, as well as duplicating keys and managing access control.",
+      "category": "Security",
+      "level": "Intermediate",
+      "min_experience_years": 2
+    },
+    {
+      "id": 25,
+      "name": "Appliance Repair",
+      "description": "Troubleshooting and fixing household appliances such as refrigerators, ovens, washing machines, and dryers.",
+      "category": "Home Repair",
+      "level": "Intermediate",
+      "min_experience_years": 2
+    }
+  ]
+  
