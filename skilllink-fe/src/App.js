@@ -75,11 +75,45 @@ function App() {
   );
 
   const handleAddSkill = () => {
+    const skillTitle = prompt("Enter the skill name:");
+    const skillDescription = prompt("Enter the skill description:");
+    const skillExperience = prompt("Enter the years of experience required:");
+    const skillLevel = prompt("Enter the skill level (e.g., Beginner, Intermediate, Expert):");
+
+    if (!skillTitle || !skillDescription || !skillExperience || !skillLevel) {
+      alert("All fields are required to add a new skill.");
+      return;
+    }
+
     const newSkill = {
       id: skills.length + 1,
-      title: 'New Skill Title',
-      description: 'This is a placeholder for a new skill.'
+      title: skillTitle,
+      description: skillDescription,
+      experience: skillExperience,
+      level: skillLevel
     };
+
+   
+    fetch('http://localhost:3000/skills', {
+      method: 'POST',
+      headers: {
+      'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newSkill)
+    })
+      .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to add the skill to the database.");
+      }
+      return response.json();
+      })
+      .then((data) => {
+      setSkills([data, ...skills]);
+      })
+      .catch((error) => {
+      console.error("Error:", error);
+      alert("An error occurred while adding the skill.");
+      });
     setSkills([newSkill, ...skills]);
   };
 
