@@ -1,20 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react'; 
+import SkillCard from './SkillCard';
 import {
-  FaBolt,
-  FaWrench,
-  FaSnowflake,
-  FaHammer,
-  FaCar,
-  FaPaintRoller,
-  FaPenNib,
-  FaLaptopCode,
-  FaTshirt,
-  FaCut,
-  FaChalkboardTeacher,
-  FaCamera
+  FaBolt, FaWrench, FaSnowflake, FaHammer, FaCar,
+  FaPaintRoller, FaPenNib, FaLaptopCode, FaTshirt,
+  FaCut, FaChalkboardTeacher, FaCamera, FaSearch,
+  FaFilter, FaPlus
 } from 'react-icons/fa';
 
-const iconMap = {
+// Export iconMap for use in SkillCard
+export const iconMap = {
   1: <FaBolt />,
   2: <FaWrench />,
   3: <FaSnowflake />,
@@ -23,42 +17,80 @@ const iconMap = {
   6: <FaPaintRoller />,
   7: <FaPenNib />,
   8: <FaLaptopCode />,
-  9: <FaTshirt />, // replaces the broken FaScissors
+  9: <FaTshirt />,
   10: <FaCut />,
   11: <FaChalkboardTeacher />,
   12: <FaCamera />
 };
 
-function Sidebar({ skills, onSelect, searchTerm, onSearch }) {
+const categories = [
+  { id: 'all', name: 'All Skills' },
+  { id: 'home', name: 'Home Services' },
+  { id: 'creative', name: 'Creative' },
+  { id: 'tech', name: 'Technology' },
+  { id: 'personal', name: 'Personal Care' }
+];
+
+function Sidebar({ skills, onSelect, searchTerm, onSearch, selectedSkill }) {
+  const [activeCategory, setActiveCategory] = useState('all');
+  
+  const filteredSkills = skills.filter(skill => {
+    const matchesSearch = skill.title.toLowerCase().includes(searchTerm.toLowerCase());
+    return matchesSearch;
+  });
+
   return (
     <div className="sidebar">
-      <h2>Available Skills</h2>
-
-      <input
-        type="text"
-        placeholder="Search skills..."
-        value={searchTerm}
-        onChange={(e) => onSearch(e.target.value)}
-        style={{
-          width: '100%',
-          padding: '0.5rem',
-          marginBottom: '1rem',
-          borderRadius: '5px',
-          border: '1px solid #ccc'
-        }}
-      />
-
-      {skills.map((skill) => (
-        <div
-          key={skill.id}
-          className="skill-card"
-          onClick={() => onSelect(skill)}
-        >
-          <h3 style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-            {iconMap[skill.id]} {skill.title}
-          </h3>
+      <div className="sidebar-header">
+        <h2>Available Skills</h2>
+        <div className="sidebar-actions">
+          <button className="icon-button">
+            <FaFilter />
+          </button>
+          <button className="icon-button">
+            <FaPlus />
+          </button>
         </div>
-      ))}
+      </div>
+
+      <div className="search-container">
+        <FaSearch className="search-icon" />
+        <input
+          type="text"
+          placeholder="Search skills..."
+          value={searchTerm}
+          onChange={(e) => onSearch(e.target.value)}
+        />
+      </div>
+      
+      <div className="category-tabs">
+        {categories.map(category => (
+          <button
+            key={category.id}
+            className={activeCategory === category.id ? 'active' : ''}
+            onClick={() => setActiveCategory(category.id)}
+          >
+            {category.name}
+          </button>
+        ))}
+      </div>
+      
+      <div className="skills-list">
+        {filteredSkills.length > 0 ? (
+          filteredSkills.map(skill => (
+            <SkillCard
+              key={skill.id}
+              skill={skill}
+              onClick={onSelect}
+              isSelected={selectedSkill?.id === skill.id}
+            />
+          ))
+        ) : (
+          <div className="no-results">
+            <p>No skills found matching your search</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
