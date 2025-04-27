@@ -7,7 +7,6 @@ import {
   FaFilter, FaPlus
 } from 'react-icons/fa';
 
-// Export iconMap for use in SkillCard
 export const iconMap = {
   1: <FaBolt />,
   2: <FaWrench />,

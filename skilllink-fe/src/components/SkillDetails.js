@@ -15,13 +15,13 @@ function SkillDetails({ skill }) {
     );
   }
 
-  // example providers
+  // Mock providers data
   const providers = [
     { id: 1, name: "Alex Johnson", rating: 4.8, reviews: 124, location: "New York, NY", skills: [skill.title, "Installation"] },
     { id: 2, name: "Maria Garcia", rating: 4.9, reviews: 89, location: "Brooklyn, NY", skills: [skill.title, "Repairs"] }
   ];
 
-  // example reviews 
+  // Mock reviews data
   const reviews = [
     { userId: 1, userName: "James Wilson", rating: 5, date: "2023-11-05", content: "Fantastic work! Would definitely hire again for any electrical needs." },
     { userId: 2, userName: "Emma Thompson", rating: 4, date: "2023-10-22", content: "Good service, arrived on time and completed the job efficiently." }
