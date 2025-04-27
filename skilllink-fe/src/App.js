@@ -74,6 +74,8 @@ function App() {
     skill.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  document.title = "SkillLink - Main Page";
+
   const handleAddSkill = () => {
     const skillTitle = prompt("Enter the skill name:");
     const skillDescription = prompt("Enter the skill description:");
