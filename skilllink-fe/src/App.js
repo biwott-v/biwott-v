@@ -1,10 +1,13 @@
+// App.js
 import { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import SkillDetails from './components/SkillDetails';
+import Login from './components/Login';
 import './index.css';
 
 function App() {
   const [skills, setSkills] = useState([
+    // ... existing skills data
     {
       id: 1,
       title: 'Electrician Services',
@@ -66,33 +69,44 @@ function App() {
       description: 'Event coverage, product shoots, and editing services.'
     }
   ]);
-
+  
   const [selectedSkill, setSelectedSkill] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [user, setUser] = useState(null);
 
-  const filteredSkills = skills.filter((skill) =>
-    skill.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
-  const handleAddSkill = () => {
-    const newSkill = {
-      id: skills.length + 1,
-      title: 'New Skill Title',
-      description: 'This is a placeholder for a new skill.'
-    };
-    setSkills([newSkill, ...skills]);
+  const handleLogin = (userData) => {
+    setIsAuthenticated(true);
+    setUser(userData);
   };
+
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+    setUser(null);
+  };
+
+  if (!isAuthenticated) {
+    return <Login onLogin={handleLogin} />;
+  }
 
   return (
     <div className="app-container">
       <Sidebar
-        skills={filteredSkills}
+        skills={skills.filter((skill) =>
+          skill.title.toLowerCase().includes(searchTerm.toLowerCase())
+        )}
         onSelect={setSelectedSkill}
         searchTerm={searchTerm}
         onSearch={setSearchTerm}
+        user={user}
+        onLogout={handleLogout}
       />
       <SkillDetails skill={selectedSkill} />
-      <button className="floating-btn" onClick={handleAddSkill}>+ New Skill</button>
+      <button className="floating-btn" onClick={() => setSkills([...skills, {
+        id: skills.length + 1,
+        title: 'New Skill Title',
+        description: 'This is a placeholder for a new skill.'
+      }])}>+ New Skill</button>
     </div>
   );
 }
