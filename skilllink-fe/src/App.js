@@ -74,6 +74,26 @@ function App() {
     skill.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  const handleSkillSelect = (skill) => {
+    fetch(`http://localhost:3000/people?skillId=${skill.id}`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch people with the selected skill.");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log("People with the selected skill:", data);
+        setSelectedSkill({ ...skill, people: data });
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("An error occurred while fetching people with the selected skill.");
+      });
+  };
+
+  document.title = "SkillLink - Main Page";
+
   const handleAddSkill = () => {
     const skillTitle = prompt("Enter the skill name:");
     const skillDescription = prompt("Enter the skill description:");
