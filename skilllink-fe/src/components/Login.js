@@ -1,4 +1,3 @@
-// Login.js (without framer-motion)
 import React, { useState } from 'react';
 import { FaUser, FaLock, FaGoogle, FaGithub, FaFacebook } from 'react-icons/fa';
 
@@ -13,7 +12,6 @@ const Login = ({ onLogin }) => {
     setIsLoading(true);
     setError('');
     
-    // Simulate authentication
     setTimeout(() => {
       if (email && password) {
         onLogin({ email });

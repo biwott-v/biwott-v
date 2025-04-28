@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      {/* Hero Section */}
+    
       <section className="hero-section">
         <div className="hero-content">
           <h1>Find the perfect <span>service professional</span> for any task</h1>
@@ -36,7 +36,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+      
       <section className="features-section">
         <h2>Why Choose Our Platform</h2>
         <div className="features-grid">
@@ -64,7 +64,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Popular Services Section */}
+      
       <section className="services-section">
         <div className="section-header">
           <h2>Popular Services</h2>
@@ -85,7 +85,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      
       <section className="cta-section">
         <div className="cta-content">
           <h2>Ready to get started?</h2>
