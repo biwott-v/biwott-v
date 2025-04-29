@@ -1,204 +1,154 @@
 {
-    "personnel": [
-        {
-            "id": 1,
-            "name": "John Doe",
-            "skills": ["JavaScript", "React", "Node.js"],
-            "description": "Frontend Developer with expertise in React and Node.js.",
-            "yearsOfExperience": 5,
-            "level": "Senior"
-        },
-        {
-            "id": 2,
-            "name": "Jane Smith",
-            "skills": ["Python", "Django", "Machine Learning"],
-            "description": "Backend Developer with a focus on Machine Learning.",
-            "yearsOfExperience": 4,
-            "level": "Mid-Level"
-        },
-        {
-            "id": 3,
-            "name": "Alice Johnson",
-            "skills": ["Java", "Spring Boot", "Microservices"],
-            "description": "Java Developer specializing in Microservices architecture.",
-            "yearsOfExperience": 6,
-            "level": "Senior"
-        },
-        {
-            "id": 4,
-            "name": "Bob Brown",
-            "skills": ["HTML", "CSS", "Bootstrap", "Painting"],
-            "description": "UI/UX Designer with a strong focus on responsive design.",
-            "yearsOfExperience": 3,
-            "level": "Junior"
-        },
-        {
-            "id": 5,
-            "name": "Chris Green",
-            "skills": ["Basketball", "Team Leadership", "Strategy"],
-            "description": "Sports Coach with a passion for basketball and team building.",
-            "yearsOfExperience": 7,
-            "level": "Senior"
-        },
-        {
-            "id": 6,
-            "name": "Emma White",
-            "skills": ["Painting", "Graphic Design", "Illustration"],
-            "description": "Creative Artist with expertise in painting and digital illustration.",
-            "yearsOfExperience": 4,
-            "level": "Mid-Level"
-        },
-        {
-            "id": 7,
-            "name": "Liam Black",
-            "skills": ["C++", "Embedded Systems", "IoT"],
-            "description": "Embedded Systems Engineer with a focus on IoT devices.",
-            "yearsOfExperience": 5,
-            "level": "Senior"
-        },
-        {
-            "id": 8,
-            "name": "Sophia Blue",
-            "skills": ["Public Speaking", "Event Management", "Leadership"],
-            "description": "Event Manager with expertise in public speaking and team coordination.",
-            "yearsOfExperience": 6,
-            "level": "Senior"
-        },
-        {
-            "id": 9,
-            "name": "Ethan Gray",
-            "skills": ["Cybersecurity", "Networking", "Linux"],
-            "description": "Cybersecurity Specialist with a strong background in network security.",
-            "yearsOfExperience": 4,
-            "level": "Mid-Level"
-        },
-        {
-            "id": 10,
-            "name": "Olivia Violet",
-            "skills": ["Photography", "Photo Editing", "Videography"],
-            "description": "Photographer with a passion for capturing moments and editing visuals.",
-            "yearsOfExperience": 3,
-            "level": "Junior"
-        },
-        {
-            "id": 11,
-            "name": "Noah Brown",
-            "skills": ["Data Analysis", "SQL", "Excel"],
-            "description": "Data Analyst with expertise in SQL and data visualization.",
-            "yearsOfExperience": 5,
-            "level": "Mid-Level"
-        },
-        {
-            "id": 12,
-            "name": "Ava Green",
-            "skills": ["Marketing", "SEO", "Content Creation"],
-            "description": "Digital Marketer with a focus on SEO and content strategy.",
-            "yearsOfExperience": 4,
-            "level": "Mid-Level"
-        },
-        {
-            "id": 13,
-            "name": "Mason White",
-            "skills": ["Carpentry", "Woodworking", "Design"],
-            "description": "Carpenter with a passion for creating custom furniture.",
-            "yearsOfExperience": 7,
-            "level": "Senior"
-        },
-        {
-            "id": 14,
-            "name": "Isabella Red",
-            "skills": ["Teaching", "Curriculum Design", "Mentoring"],
-            "description": "Educator with expertise in curriculum development and mentoring.",
-            "yearsOfExperience": 8,
-            "level": "Senior"
-        },
-        {
-            "id": 15,
-            "name": "James Yellow",
-            "skills": ["Welding", "Metal Fabrication", "Blueprint Reading"],
-            "description": "Welder with experience in metal fabrication and blueprint interpretation.",
-            "yearsOfExperience": 6,
-            "level": "Senior"
-        },
-        {
-            "id": 16,
-            "name": "Mia Orange",
-            "skills": ["Cooking", "Baking", "Menu Planning"],
-            "description": "Chef with a passion for creating unique culinary experiences.",
-            "yearsOfExperience": 5,
-            "level": "Mid-Level"
-        },
-        {
-            "id": 17,
-            "name": "Lucas Purple",
-            "skills": ["Fitness Training", "Nutrition", "Motivation"],
-            "description": "Personal Trainer with expertise in fitness and nutrition.",
-            "yearsOfExperience": 4,
-            "level": "Mid-Level"
-        },
-        {
-            "id": 18,
-            "name": "Charlotte Pink",
-            "skills": ["Fashion Design", "Sewing", "Trend Analysis"],
-            "description": "Fashion Designer with a focus on modern trends and custom designs.",
-            "yearsOfExperience": 6,
-            "level": "Senior"
-        },
-        {
-            "id": 19,
-            "name": "Benjamin Cyan",
-            "skills": ["3D Modeling", "Animation", "Game Design"],
-            "description": "3D Artist with expertise in animation and game design.",
-            "yearsOfExperience": 5,
-            "level": "Mid-Level"
-        },
-        {
-            "id": 20,
-            "name": "Amelia Indigo",
-            "skills": ["Writing", "Editing", "Storytelling"],
-            "description": "Writer with a passion for storytelling and content creation.",
-            "yearsOfExperience": 7,
-            "level": "Senior"
-        },
-        {
-            "id": 21,
-            "name": "Henry Teal",
-            "skills": ["Electrical Services", "Circuit Design", "Robotics"],
-            "description": "Electrical Engineer with a focus on robotics and automation.",
-            "yearsOfExperience": 6,
-            "level": "Senior"
-        },
-        {
-            "id": 22,
-            "name": "Ella Lime",
-            "skills": ["Plumbing Solutions", "Landscaping", "Horticulture"],
-            "description": "Plumber with expertise in plumbing and plant care.",
-            "yearsOfExperience": 5,
-            "level": "Mid-Level"
-        },
-        {
-            "id": 23,
-            "name": "Alexander Gold",
-            "skills": ["AC Technician", "Tax Preparation", "Financial Analysis"],
-            "description": "AC Technician with a focus on cooling systems.",
-            "yearsOfExperience": 8,
-            "level": "Senior"
-        },
-        {
-            "id": 24,
-            "name": "Grace Silver",
-            "skills": ["Mobile Car Wash", "Conflict Resolution", "Communication"],
-            "description": "Car Wash Specialist with a focus on mobile services.",
-            "yearsOfExperience": 3,
-            "level": "Junior"
-        },
-        {
-            "id": 25,
-            "name": "Daniel Bronze",
-            "skills": ["House Painting", "Quality Assurance", "Automation"],
-            "description": "Painter with expertise in house painting and finishing.",
-            "yearsOfExperience": 4,
-            "level": "Mid-Level"
-        }
-    ]
+  "skills": [
+    {
+      "id": 1,
+      "title": "Painting",
+      "description": "Learn to create beautiful artwork using paints.",
+      "reviewsCount": 85
+    },
+    {
+      "id": 2,
+      "title": "Singing",
+      "description": "Improve your vocal skills and learn to sing confidently.",
+      "reviewsCount": 120
+    },
+    {
+      "id": 3,
+      "title": "Cooking",
+      "description": "Master the art of cooking delicious meals.",
+      "reviewsCount": 200
+    },
+    {
+      "id": 4,
+      "title": "Gardening",
+      "description": "Learn how to grow and maintain a beautiful garden.",
+      "reviewsCount": 95
+    },
+    {
+      "id": 5,
+      "title": "Photography",
+      "description": "Capture stunning photos with your camera or smartphone.",
+      "reviewsCount": 150
+    },
+    {
+      "id": 6,
+      "title": "Writing Poetry",
+      "description": "Express yourself through creative poetry writing.",
+      "reviewsCount": 70
+    },
+    {
+      "id": 7,
+      "title": "Dancing",
+      "description": "Learn various dance styles and improve your rhythm.",
+      "reviewsCount": 110
+    },
+    {
+      "id": 8,
+      "title": "Public Speaking",
+      "description": "Build confidence and improve your public speaking skills.",
+      "reviewsCount": 130
+    },
+    {
+      "id": 9,
+      "title": "Knitting",
+      "description": "Create beautiful knitted items like scarves and sweaters.",
+      "reviewsCount": 60
+    },
+    {
+    "id": 10,
+      "title": "Drawing",
+      "description": "Learn to sketch and draw with pencils and other tools.",
+      "reviewsCount": 90
+    },
+    {
+      "id": 11,
+      "title": "Playing Guitar",
+      "description": "Master the basics of playing the guitar.",
+      "reviewsCount": 140
+    },
+    {
+      "id": 12,
+      "title": "Yoga",
+      "description": "Improve your flexibility and mindfulness through yoga.",
+      "reviewsCount": 180
+    },
+    {
+      "id": 13,
+      "title": "Meditation",
+      "description": "Learn techniques to relax and focus your mind.",
+      "reviewsCount": 100
+    },
+    {
+      "id": 14,
+      "title": "Sewing",
+      "description": "Learn to sew and create your own clothing or crafts.",
+      "reviewsCount": 75
+    },
+    {
+      "id": 15,
+      "title": "Woodworking",
+      "description": "Build furniture and other items using woodworking techniques.",
+      "reviewsCount": 50
+    },
+    {
+      "id": 16,
+      "title": "Makeup Artistry",
+      "description": "Learn to apply makeup professionally.",
+      "reviewsCount": 125
+    },
+    {
+      "id": 17,
+      "title": "Swimming",
+      "description": "Learn to swim and improve your water safety skills.",
+      "reviewsCount": 90
+    },
+    {
+      "id": 18,
+      "title": "Baking",
+      "description": "Master the art of baking cakes, cookies, and bread.",
+      "reviewsCount": 160
+    },
+    {
+      "id": 19,
+      "title": "Origami",
+      "description": "Create beautiful paper art through origami.",
+      "reviewsCount": 55
+    },
+    {
+      "id": 20,
+      "title": "Calligraphy",
+      "description": "Learn the art of beautiful handwriting.",
+      "reviewsCount": 80
+    },
+    {
+      "id": 21,
+      "title": "Playing Piano",
+      "description": "Learn to play the piano and read sheet music.",
+      "reviewsCount": 135
+    },
+    {
+      "id": 22,
+      "title": "Fishing",
+      "description": "Learn the basics of fishing and enjoy the outdoors.",
+      "reviewsCount": 65
+    },
+    {
+      "id": 23,
+      "title": "Cycling",
+      "description": "Improve your cycling skills and explore new trails.",
+      "reviewsCount": 105
+    },
+    {
+      "id": 24,
+      "title": "First Aid",
+      "description": "Learn essential first aid skills to handle emergencies.",
+      "reviewsCount": 115
+    },
+    {
+      "id": 25,
+      "title": "Pottery",
+      "description": "Create beautiful pottery items using clay.",
+      "reviewsCount": 70
+    }
+  ]
 }
