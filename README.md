@@ -5,10 +5,10 @@ Skill-Link is your all-in-one platform to discover, develop, and showcase skills
 ### Demo 
 
 ### Technologies used & Features
-REACT 
-HTML5
-CSS3
-API
+REACT <br/>
+HTML5<br/>
+CSS3<br/>
+API<br/>
 
 ### Contributors
 Eddy Yego
