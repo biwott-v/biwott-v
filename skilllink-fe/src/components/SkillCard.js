@@ -1,40 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { iconMap } from './Sidebar';
 
 const SkillCard = ({ skill, onClick, isSelected }) => {
-  const [skillData, setSkillData] = React.useState(null);
+  const [data, setData] = useState(null);
 
-  React.useEffect(() => {
-    const fetchSkillData = async () => {
-      try {
-        const response = await fetch(`http://localhost:5000/skills/skills/${skill.id}`);
-        const data = await response.json();
-        setSkillData(data);
-      } catch (error) {
-        console.error('Error fetching skill data:', error);
-      }
-    };
-
-    fetchSkillData();
+  useEffect(() => {
+    fetch(`http://localhost:5000/skills/skills/${skill.id}`)
+      .then(res => res.json())
+      .then(setData)
+      .catch(err => console.error('Fetch error:', err));
   }, [skill.id]);
 
-  if (!skillData) {
-    return <div>Loading...</div>;
-  }
+  if (!data) return <div>Loading...</div>;
 
   return (
     <div 
       className={`skill-card ${isSelected ? 'selected' : ''}`}
       onClick={() => onClick(skill)}
     >
-      <div className="skill-icon">{iconMap[skillData.id]}</div>
-      <div className="skill-content">
-        <h3>{skillData.title}</h3>
-        <p className="skill-excerpt">{skillData.description.substring(0, 60)}...</p>
-      </div>
-      <div className="skill-rating">
-        <span className="stars">★★★★★</span>
-        <span className="reviews">({skillData.reviewsCount} reviews)</span>
+      <div className="skill-icon">{iconMap[data.id]}</div>
+      <h3>{data.title}</h3>
+      <p>{data.description.slice(0, 60)}...</p>
+      <div>
+        <span>★★★★★</span>
+        <span>({data.reviewsCount} reviews)</span>
       </div>
     </div>
   );
