@@ -12,6 +12,7 @@ REACT <br/>
 HTML5<br/>
 CSS3<br/>
 API<br/>
+Express<br/>
 
 ### Contributors
 Eddy Yego<br/>
@@ -23,3 +24,7 @@ Immanuel Peter<br/>
 ### License information 
 Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
+**Usage**<br/>
+clone the repository `https://github.com/Yecode254/Skill-link-FE/edit/main/`<br/>
+install dependacies    `npm install`<br/>
+run the server    `node server.js`<br/>
