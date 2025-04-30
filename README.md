@@ -14,11 +14,11 @@ CSS3<br/>
 API<br/>
 
 ### Contributors
-Eddy Yego
-Diagne Bunyego
-Nasra Maulid
-Victor Biwot
-Immanuel Peter
+Eddy Yego<br/>
+Diagne Bunyego<br/>
+Nasra Maulid<br/>
+Victor Biwot<br/>
+Immanuel Peter<br/>
 
 ### License information 
 Licensed under the Apache License, Version 2.0 (the "License");
