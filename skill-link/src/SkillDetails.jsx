@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import ProviderCard from './ProviderCard';
+import ProviderCard from "./ProviderCard";
+
 import ReviewCard from './ReviewCard';
 
 function SkillDetails({ skill }) {

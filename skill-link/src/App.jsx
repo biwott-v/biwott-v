@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Sidebar from './components/Sidebar';
-import SkillDetails from './components/SkillDetails';
-import Login from './components/Login';
-import Home from './components/Home';
+import Sidebar from './Sidebar';
+import SkillDetails from './SkillDetails';
+import Login from './Login';
+import Home from './Home';
 import './index.css';
 
 function App() {
