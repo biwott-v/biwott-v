@@ -12,7 +12,7 @@ REACT <br/>
 HTML5<br/>
 CSS3<br/>
 API<br/>
-Express<br/>
+Express js<br/>
 
 ### Contributors
 Eddy Yego<br/>
