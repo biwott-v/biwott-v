@@ -3,13 +3,9 @@ import { iconMap } from './Sidebar';
 
 const SkillCard = ({ skill, onClick, isSelected }) => {
   const [data, setData] = useState(null);
-
   useEffect(() => {
-    fetch(`http://localhost:5000/skills/skills/${skill.id}`)
-      .then(res => res.json())
-      .then(setData)
-      .catch(err => console.error('Fetch error:', err));
-  }, [skill.id]);
+    setData(skill);
+  }, [skill]);
 
   if (!data) return <div>Loading...</div>;
 
