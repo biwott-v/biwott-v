@@ -23,7 +23,7 @@ Immanuel Peter<br/>
 
 ### License information 
 Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.<br/>
+   you may not use this file except in compliance with the License.<br/><br/><br/>
 **Usage**<br/>
 clone the repository `https://github.com/Yecode254/Skill-link-FE/edit/main/`<br/>
 install dependacies    `npm install`<br/>
