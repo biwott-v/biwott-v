@@ -3,7 +3,7 @@
 Skill-Link is your all-in-one platform to discover, develop, and showcase skills that matter. Whether you're looking to learn something new, share your expertise, or connect with others in your field, Skill-Link helps bridge the gap between passion and opportunity. Join a growing community of learners, creators, and professionals — and take your skills to the next level.
 
 ### Demo 
-Screenshot 2025-04-30 203011.png
+https://github.com/Yecode254/Skill-link-FE/blob/77e5f3114b27a0360696b1d6efcc96df58095a54/Screenshot%202025-04-30%20203011.png
 ### Technologies used & Features
 REACT <br/>
 HTML5<br/>
