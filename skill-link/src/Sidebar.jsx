@@ -4,7 +4,7 @@ import {
   FaBolt, FaWrench, FaSnowflake, FaHammer, FaCar,
   FaPaintRoller, FaPenNib, FaLaptopCode, FaTshirt,
   FaCut, FaChalkboardTeacher, FaCamera, FaSearch,
-  FaFilter, FaPlus
+  FaFilter, FaPlus, FaMusic, FaTree, FaBaby
 } from 'react-icons/fa';
 
 export const iconMap = {
@@ -19,7 +19,10 @@ export const iconMap = {
   9: <FaTshirt />,
   10: <FaCut />,
   11: <FaChalkboardTeacher />,
-  12: <FaCamera />
+  12: <FaCamera />,
+  13: <FaMusic />,
+  14: <FaTree />,
+  15: <FaBaby />
 };
 
 const categories = [
@@ -27,7 +30,8 @@ const categories = [
   { id: 'home', name: 'Home Services' },
   { id: 'creative', name: 'Creative' },
   { id: 'tech', name: 'Technology' },
-  { id: 'personal', name: 'Personal Care' }
+  { id: 'personal', name: 'Personal Care' },
+  { id: 'other', name: 'Other Services' }
 ];
 
 function Sidebar({ skills, onSelect, searchTerm, onSearch, selectedSkill }) {
