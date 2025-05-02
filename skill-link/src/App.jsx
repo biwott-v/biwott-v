@@ -8,13 +8,21 @@ import './index.css';
 
 function App() {
   const [skills, setSkills] = useState([
-    // ... your existing skills data
-    {
-      id: 1,
-      title: 'Electrician Services',
-      description: 'Expert in wiring, sockets, lighting, and home installations.'
-    },
-    // ... rest of your skills
+    { id: 1, title: 'Electrician Services', description: 'Expert in wiring, sockets, lighting, and home installations.' },
+    { id: 2, title: 'Plumbing Services', description: 'Fixing leaks, pipe installations, and bathroom fittings.' },
+    { id: 3, title: 'AC Repair', description: 'Installation, maintenance, and repair of air conditioning units.' },
+    { id: 4, title: 'Carpentry', description: 'Custom furniture, repairs, and woodworking projects.' },
+    { id: 5, title: 'Auto Mechanic', description: 'Vehicle maintenance, repairs, and diagnostics.' },
+    { id: 6, title: 'Painting Services', description: 'Interior and exterior painting for homes and offices.' },
+    { id: 7, title: 'Graphic Design', description: 'Logos, branding, and digital artwork creation.' },
+    { id: 8, title: 'Web Development', description: 'Website creation and application development.' },
+    { id: 9, title: 'Tailoring', description: 'Custom clothing and alterations.' },
+    { id: 10, title: 'Hair Styling', description: 'Haircuts, coloring, and professional styling.' },
+    { id: 11, title: 'Tutoring', description: 'Academic support in various subjects.' },
+    { id: 12, title: 'Photography', description: 'Professional photo sessions and events coverage.' },
+    { id: 13, title: 'Music Lessons', description: 'Instrument and vocal training.' },
+    { id: 14, title: 'Gardening', description: 'Landscaping and plant care services.' },
+    { id: 15, title: 'Child Care', description: 'Professional babysitting and child minding.' }
   ]);
   
   const [selectedSkill, setSelectedSkill] = useState(null);
@@ -33,9 +41,10 @@ function App() {
   };
 
   const addNewSkill = () => {
+    const newId = skills.length + 1;
     setSkills([...skills, {
-      id: skills.length + 1,
-      title: 'New Skill Title',
+      id: newId,
+      title: `New Skill ${newId}`,
       description: 'This is a placeholder for a new skill.'
     }]);
   };
@@ -43,7 +52,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Public routes */}
         <Route path="/" element={<Home />} />
         <Route 
           path="/login" 
@@ -52,7 +60,6 @@ function App() {
             <Navigate to="/dashboard" replace />} 
         />
         
-        {/* Protected dashboard routes */}
         <Route 
           path="/dashboard/*" 
           element={isAuthenticated ? (
